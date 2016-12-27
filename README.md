@@ -1,5 +1,6 @@
 # Resume Processing CLI
 Command line application for resume processing.
+MainApp.py contain main function.
 ## FormatDocument
 this module checks for docx file formatting
 ##programing
