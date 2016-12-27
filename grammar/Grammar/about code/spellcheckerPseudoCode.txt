@@ -1,0 +1,46 @@
+PSEUDOCODE spelling errors
+
+//dictionary is hashes and containing key as english word and value as frequency of 
+//word in training data
+
+function checkSpell(wordlist)
+	FOR word in wordlist
+		TRY
+			dictionary[word]
+		CATCH
+			correctWord=spellCorrection(word.lower())
+            try:
+                IF dictionary[correctWord]:
+                    print this is spell mistakes
+            CATCH:
+                IF first index is in upper case it might be nouns or shortform 
+					print add to dictionary 
+                ELSE:
+					print this is tedious error
+					
+					
+function spellCorrection(word)
+   words=build dictionary from training set
+   IF word length <3
+    matched -> list for containing correct word
+	matched -> word[1]+word[0]
+    FOR alphabets length<word length
+        FOR value in alphabet:
+            matched -> word[alphabets]+value (e.g word=ma matched=[ma,mb, mc md ...])
+    sets=make set of word list
+    return KEY with maximum frequency 
+   
+   ELSE:
+       splits     = list of all element by splitting its alphabet in all possible combination
+       
+       deletes    = deleting one alphabet from word in all possible combination( e.g.word=meth deletes [eth, mth, met,...])
+      
+       transposes = swapping position of two alphabets in all possible combination(e.g. word=meth transposes [emth ,emht,mteh....])
+      
+       replaces   = replace each element with all possible insertion of alphabets (e.g. word=meth replace [aeth, beth, cath,...])
+      
+       inserts    =inserting alphabet at each position in word(e.g. word=meth inserts[ameth,bmeth,cmeth...])
+       sets= make set of words(deletes + transposes + replaces + inserts)
+       return element with maximum frequency from dictionary sets
+
+

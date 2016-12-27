@@ -1,0 +1,124 @@
+java
+Grails
+Struts 2
+Struts
+Turbine
+Tapestry
+WebWork
+Cocoon
+Maverick
+Echo
+SOFIA
+Verge
+Anvil
+Jaffa
+Japple
+JPublish
+Jucas
+MyFaces
+WebOnSwing
+AWT
+Swing
+SWT
+SwingX
+GroovyFX
+jsf
+Chrysalis
+VRaptor
+Swinglets
+Millstone
+Wicket
+SwingWeb
+Macaw
+Barracuda
+RIFE
+DWR
+JSPWidget
+JOSSO
+JAT
+OpenXava
+Stripes
+Click
+Ardor3D
+DimensioneX Multiplayer Engine
+Env3D
+JGame
+LibGDX
+Multiverse Foundation
+playn
+
+ZK
+Caramba
+wingS
+Helma
+Restlet
+Brill
+ztemplates
+Aranea Web Framework
+RSF
+Strecks
+Google Web Toolkit
+Aurora
+ThinWire
+Roma Meta Framework
+Pustefix
+jWic
+Calyxo
+Mentawai
+Trimpath Junction
+Makumba
+AribaWeb
+fleXive
+Flower framework
+Hamlets
+Induction
+JVx
+jZeno
+Pandora
+Playframework
+SerfJ
+Sombrero
+Vaadin
+Vroom
+wro4j
+InfoGlue
+Magnolia
+Ion
+OpenCMS
+eAdmin/OWX
+MMBase
+Apache Lenya
+Cofax
+Webman
+webEditor
+Slide
+Daisy
+Open Harmonise
+DSPACE
+Contineo
+Alfresco
+GeiNuke
+MeshCMS
+AtLeap
+OpenEdit
+Xinco
+Corinis CCM
+jLibrary
+Hippo CMS
+TransferCM
+Nuxeo ECM
+Current CMS
+Riot
+JAPS
+Contelligent
+dotCMS
+Enonic CMS
+fleXive CMS
+JadaSite
+Jahia
+Jease
+LibreSource
+OpenWGA
+pulse
+Shopizer
+Walrus CMS

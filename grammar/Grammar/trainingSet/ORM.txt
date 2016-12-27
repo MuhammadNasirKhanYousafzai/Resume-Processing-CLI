@@ -1,0 +1,116 @@
+Entity Framework
+BL Toolkit
+Dapper
+Dapper Extensions
+NHibernate
+FluentMigrator
+ServiceStack.OrmLite
+Massive
+MongoDB
+CouchDB
+Terrastore
+RavenDB
+OrientDB
+ThruDB
+SisoDB
+CloudKit
+Perservere
+Jackrabbit
+RaptorDB
+ArangoDB
+BaseX
+Cassandra
+Cloudant
+Clusterpoint
+Couchbase Server
+CouchDB
+eXist
+FleetDB
+Informix
+Inquire
+Lotus Notes
+MarkLogic
+MUMPS
+Qizx
+RavenDB
+Redis
+RethinkDB
+Rocket U2
+Sqrrl Enterprise
+Symport
+LiteSQL
+ODB
+Wt::Dbo
+QxOrm
+Athena Framework
+ActiveJDBC
+ActiveJPA
+Apache Gora
+Carbonado
+Cayenne
+Apache
+DataNucleus
+Ebean
+EclipseLink
+EJB
+Enterprise Objects Framework
+greenDAO
+Hibernate
+IBM PureQuery
+Java Data Objects
+Object Oriented Querying
+Java Persistence API
+Kodo
+MyBatis
+Object Relational Bridge
+Apache OJB
+OpenJPA
+ORMLite
+Querydsl
+QuickDB ORM
+TopLink
+Torque
+Ujorm
+Knex
+Bookshelf
+Sequelize
+DatabaseObjects
+Core Data
+Business Logic Toolkit
+Castle ActiveRecord
+DatabaseObjects
+DataObjects.NET
+Dapper
+DrivenDb
+Dwarf
+Entity Framework
+EntitySpaces
+iBATIS
+LINQ to SQL
+LLBLGen Pro
+Massive
+PetaPoco
+Neo
+NHibernate
+nHydrate
+Persistor.NET
+Quick Objects
+Signum Framework
+SubSonic
+Telerik Data Access
+VITA
+Bold for Delphi
+Enterprise Objects
+Core Data
+Peewee ORM
+SQLAlchemy
+SQLObject
+Storm
+Tryton
+web2py
+ActiveRecord
+Sequel
+Datamapper
+iBATIS
+TOPLink
+DatabaseObjects

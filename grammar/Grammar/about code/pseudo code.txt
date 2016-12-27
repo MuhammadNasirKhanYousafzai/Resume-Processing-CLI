@@ -1,0 +1,404 @@
+﻿PSEUDOCODE Grammar errors
+Notes
+		word is currently selected word from document
+		first second third ingform s/es  are Form of verbs
+		verb is verb in sentence
+		subject is subject in sentence
+		auxiliaryVerbs is list of auxiliary verbs in sentence
+		length is total number of word in document
+		article show article in the sentence
+		word+1 or any any another number addition show the next word from current word and - show previous
+		next show word
+		prevWord show previous word
+		and show and gate logic
+		or shows or gate logic
+		not shows not gate logic
+		pass shows that sentence is correct
+		print shows notification
+		preposition are list of preposition
+		delete will delete the list
+		NULL show empty
+
+FOR word in document
+	IF word contain punctuation (.,?,")
+		EndOfSentence=True
+		Remove punctuation
+   
+	ELSE IF word contain punctuation are NOT(.,?,")
+		Remove punctuation
+	
+	IF word is auxiliary verbs short 
+		Replace With full auxiliary verb
+	
+	IF word and next word are same
+		print error repetition of word
+	
+	ELSE IF word is subject(pronoun)
+		
+		IF word==that and next word is possessive pronoun
+			delete auxiliaryVerbs
+			verb=NULL
+			subject=NULL
+			article =True
+			
+		ELSE IF subject==NULL and article==NULL
+			subject=word
+		
+		ELSE IF article==True and subject==NULL and verb==NULL and auxiliaryVerbs==[]
+			subject=word
+		
+		ELSE IF subject!=NULL and verb==NULL and auxiliaryVerbs[]
+			subject=word
+		
+		ELSE IF verb!=NULL and (subject!=NULL OR article==True)
+			subject=word
+			article=False
+			delete auxiliary
+			verb=NULL
+		
+		ELSE IF	(subject!=NULL or article==True) and auxiliaryVerbs[not empty] 
+			subject=word
+			article=False
+			delete auxiliary
+			verb=NULL
+			
+	
+	ELSE IF word is conjunction 
+		subject=word
+		article=False
+		delete auxiliary
+		verb=NULL
+		
+	ELSE IF word is auxiliary and prevWord is article
+		add word to auxiliaryVerbs[]
+		
+		IF auxiliaryVerbs order is False
+			delete auxiliaryVerbs[]
+			subject=NULL
+			article=False
+			verb=NULL
+			add word to auxiliaryVerbs[]
+			
+	ELSE IF word is in verbs and (next word is not auxiliary) and (verb==NULL) 
+	and (prevWord is not objective pronoun) and ( prevWord is not mode/tone word) 
+	and (prevWord is not article) and (prevWord is not conjunction) 
+	and (prevWord is not relationalWord) and (prevWord is not no)
+	
+		verb=word
+		IF auxiliaryVerbs[] is NULL
+			
+			IF article =False and subject=NULL
+				pass
+			
+			ELSE IF subject is not third person singular  and verb is not first/second Form
+				print first/second error
+				
+			ELSE IF subject is  third person singular  and verb is not (first+s/es)/second Form
+				print s/es Form error
+				
+
+			ELSE IF prevWord is can/could and verb is first Form
+				pass
+
+			ELSE IF next word is "as" and verb is is third Form
+				pass
+
+			ELSE IF article is True and verb is first Form
+				pass
+		
+			ELSE IF verb is ingform and article==True
+				pass
+				
+			ELSE
+				IF verb is not second Form
+					print second of verb is expected here
+					
+			
+		ELSE IF auxiliaryVerbs[0] is do:
+			
+			IF verb is first Form and subject is not third person singular
+				pass
+			ELSE
+				print first Form of verb is expected here
+		
+		
+		ELSE IF auxiliaryVerbs[0] is does:
+			
+			IF verb is first Form and subject is  third person singular
+				pass
+			ELSE
+				print s/es Form of verb is expected here
+		
+		
+		ELSE IF  auxiliaryVerbs[0] is did
+			IF verb is not first Form 
+				print	error in use of did
+				
+				
+		ELSE IF auxiliaryVerbs[0] is may or might
+			IF auxiliaryVerbs length <2 and verb is first Form
+				pass
+			
+			ELSE IF auxiliaryVerbs length<3 and verb is third Form and auxiliaryVerbs[1] is be
+				pass
+			
+			ELSE IF auxiliaryVerbs length==3 and (verb is third / ingform Form) and (auxiliaryVerbs[1] is have and auxiliaryVerbs[2] is been)
+				pass
+			ELSE
+				print improper use of may / might
+				
+				
+		ELSE IF auxiliaryVerbs[0] is will or would
+			IF auxiliaryVerbs length is 1 and subject is not first person
+				pass
+			
+			ELSE IF auxiliaryVerbs length is 2 and subject is not first person	and auxiliaryVerbs[1] is be
+				pass
+			
+			ELSE IF auxiliaryVerbs length is 3 and subject is not first person and(verb is third / ingform) and (auxiliaryVerbs[1] is have and auxiliaryVerbs[2] is been)
+				pass
+			
+			ELSE
+				print error in use of will or would
+				
+
+		ELSE IF auxiliaryVerbs[0] is shall or should
+			IF auxiliaryVerbs length is 1 and subject is  first person
+				pass
+			
+			ELSE IF auxiliaryVerbs length is 2 and subject is  first person	and auxiliaryVerbs[1] is be
+				pass
+			
+			ELSE IF auxiliaryVerbs length is 3 and subject is  first person and(verb is third / ingform) and (auxiliaryVerbs[1] is have and auxiliaryVerbs[2] is been)
+				pass
+			
+			ELSE
+				print error in use of shall or should
+
+
+		ELSE IF auxiliaryVerbs[0] is 'is'
+			IF auxiliaryVerbs length==1 and verb is ingform / third Form and subject is third person singular
+				pass
+
+			ELSE IF auxiliaryVerbs length==1 and prevWord is preposition and verb is first  Form and subject is third person singular
+				pass
+
+			ELSE IF auxiliaryVerbs length is 2 and auxiliaryVerbs[1] is being and verb is third Form
+				pass
+			
+			ELSE
+				print error in use of is
+				
+		ELSE IF auxiliaryVerbs[0] is am 
+			IF subject is first person singular and verb is ingform Form
+				pass
+			ELSE IF auxiliaryVerbs length is 2 and auxiliaryVerbs[1] is being and subject is first person singular and verb is third Form
+				pass
+
+
+		ELSE IF auxiliaryVerbs[0] is are
+			IF auxiliaryVerbs length is 1 and verb is ingform / third Form and subject is not first/third person singular
+				pass
+
+			ELSE IF auxiliaryVerbs length is 1 and prevWord is preposition and verb is first  Form and subject is not first / third person singular
+				pass
+
+			ELSE IF auxiliaryVerbs length is 2 and auxiliaryVerbs[1] is being and verb is third Form and subject not first/third person singular
+				pass
+			
+			ELSE
+				print error in use of are
+				
+		
+
+		ELSE IF auxiliaryVerbs[0] is was
+			
+			IF auxiliaryVerbs length is 1 and verb is ingform / third Form and subject is not (first / third /second) person plural
+				pass
+
+			ELSE IF auxiliaryVerbs length is 1 and prevWord is preposition and verb is first  Form and subject is not (first / third /second) person plural
+				pass
+
+			ELSE IF auxiliaryVerbs length is 2 and auxiliaryVerbs[1] is being and verb is third Form and subject is not (first / third /second) person plural
+				pass
+			
+			ELSE
+				print error in use of was
+
+
+
+		ELSE IF auxiliaryVerbs[0] is were
+			
+			IF auxiliaryVerbs length is 1 and verb is ingform / third Form and subject is not (first / third ) person singular
+				pass
+
+			ELSE IF auxiliaryVerbs length is 1 and prevWord is preposition and verb is first  Form and subject is not (first / third ) person singular
+				pass
+
+			ELSE IF auxiliaryVerbs length is 2 and auxiliaryVerbs[1] is being and verb is third Form and subject is not (first / third ) person singular
+				pass
+			
+			ELSE
+				print error in use of were
+				
+	
+		ELSE IF auxiliaryVerbs[0] is has
+			IF auxiliaryVerbs length is 1 and subject is third person singular and verb is third Form
+				pass
+			
+			ELSE IF auxiliaryVerbs length is 2 and auxiliaryVerbs[1] is been  and subject is third person singular and verb is ingform / third Form
+				pass
+		
+			ELSE IF article is True or subject is NULL
+				pass
+			ELSE 
+				print error in use of has	
+				
+		ELSE IF auxiliaryVerbs[0] is have
+			IF auxiliaryVerbs length is 1 and subject is not third person singular and verb is third Form
+				pass
+			
+			ELSE IF auxiliaryVerbs length is 2 and auxiliaryVerbs[1] is been  and subject not is third person singular and verb is ingform / third Form
+				pass
+		
+			ELSE IF article is True or subject is NULL
+				pass
+			ELSE 
+				print error in use of have	
+		
+		
+		ELSE IF auxiliaryVerbs[0] is had
+			IF auxiliaryVerbs length is 1  and verb is third Form
+				pass
+			
+			ELSE IF auxiliaryVerbs length is 2 and auxiliaryVerbs[1] is been  and  verb is ingform / third Form
+				pass
+			ELSE 
+			    print error in use of had
+
+	        			
+	
+	IF word is am:
+        IF subject is not NULL and subject is not i:
+            print subject should be I
+	
+	ELSE IF word is 'is'
+        IF subject is not first/second person
+			pass
+		
+        IF ELSE subject is None or article is True:
+            pass
+        else:
+            print error in use of is
+	
+	
+	ELSE IF word is are
+        IF subject is not first/third person singular
+			pass
+        IF ELSE subject is None or article is True:
+            pass
+        else:
+            print error in use of are
+	
+	
+	
+	ELSE IF word is was
+        IF subject is  first/third person singular
+			pass
+        IF ELSE subject is None or article is True:
+            pass
+        else:
+            print error in use of was
+
+			  
+			  
+	ELSE IF word is were
+        IF subject is not first/third person singular
+			pass
+        IF ELSE subject is None or article is True:
+            pass
+        else:
+            print error in use of were
+			
+			
+			
+	ELSE IF word is have and auxiliaryVerbs[0] is will /shall/would/should 
+        IF subject is third person singular
+			pass
+        IF ELSE subject is None or article is True:
+            pass
+        else:
+            print error in use of have
+
+	ELSE IF word is has
+        IF subject is not third person singular
+			print error in use of has
+		
+
+	ELSE IF word is for or since
+        IF auxiliaryVerbs length<2:
+            pass
+        ELSE IF auxiliaryVerbs[0] is have or auxiliaryVerbs[0] is has or auxiliaryVerbs[0] is had or auxiliaryVerbs[0] is shall or auxiliaryVerbs[0] is will
+            IF auxiliaryVerbs[1] is been or auxiliaryVerbs[1] is have
+                IF was is for and word+2 is less then total words
+                    If word+2 is not exact time description
+                        pass
+                    ELSE If word+3 is Time oral time description ( e.g. a long time ago)
+                        pass
+                    ELSE
+                        print improper use of for
+
+                ELSE IF word is since and word+2 is not exact time description
+					print improper use of since
+		
+	IF word is article 
+        vowel='aeiou'
+        IF word is a or an
+            subject=NULL
+            article=True
+			IF article is a and  next word first index is not vowel 
+                print improper use of "a"
+            ELSE IF  article is an and next word first index is vowel
+                print improper use of an    
+        ELSE
+            subject=NULL
+            article=True
+
+        delete auxiliaryVerbs[:]
+        verb=NULL
+
+    ELSE IF word is possessive pronoun:
+        delete auxiliaryVerbs[:]
+        verb=NULL
+        subject=NULL
+        article=True
+	
+	    
+    IF word is in preposition
+        IF word+1 ==length
+                pass
+        ELSE IF word is you/it/that/this/which
+                pass
+        IF word is subjective pronoun
+            print this is objective pronoun expected
+        ELSE IF  word+2 > length and word+1 is possessive pronoun
+            print preposition error
+
+    IF  word is let
+		IF next word is subjective / possessive pronoun except you and her
+			print error in use of let
+    
+    IF endOfSentence is True:
+            subject=NULL
+            article=False
+            delete auxiliaryVerbs[]
+            verb=NULL
+            endOfSentence=False
+
+	
+	
+	//this is confusing  
+    IF word is be or being or been
+        IF next word is pronoun
+			print error in structure	
+			

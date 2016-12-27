@@ -1,0 +1,17 @@
+PSEUDOCODE novelty errors
+
+//finding novelty on bases of common words 
+function novelty(list)
+	uniqueWords=NULL
+	FOR iterator -> 0 to length of list
+		if list[iterator] is not (common word) not (verb) not (conjunction) not (adjective) not (adverb)
+		not (common noun) not (pronoun) not (preposition) not (auxiliary) not (modetone word)
+			
+			add word to uniqueWords list
+			
+			
+//finding novelty on bases of other document
+
+function noveltyDoc(document1,document2)
+	Dictionary1=build priority dictionary from words of document1
+	Dictionary2=build priority dictionary from words of document2

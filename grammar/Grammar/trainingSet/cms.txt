@@ -1,0 +1,116 @@
+Apache Roller
+OpenCms
+Ametys CMS
+Liferay
+eXo Platform
+DSpace
+Enonic
+Fedora Commons
+Dotcms
+LogicalDOC
+Nuxeo EP
+Alfresco Community Edition
+Magnolia
+Hippo CMS
+VosaoCMS
+OpenWGA
+Jahia Community Distribution
+OpenKM
+Thingamablog
+Apache Lenya
+Daisy
+Composite C1
+DotNetNuke
+mojoPortal
+Orchard Project
+Umbraco
+blosxom
+Bricolage
+Bricolage
+EPrints
+Foswiki
+Ikiwiki
+Movable Type
+TWiki
+SPINE
+WebGUI
+ATutor
+b2evolution
+BEdita
+Chevereto
+CMSimple
+CMS Made Simple
+concrete5
+Contao
+Cotonti
+Dokuwiki
+Dotclear
+Drupal
+DynPG
+Exponent CMS
+eZ Publish
+Geeklog
+GetSimple CMS
+Habari
+ImpressCMS
+ImpressPages
+Jamroom
+Joomla
+Kajona
+Magento
+Mambo
+MediaWiki
+MiaCMS
+Midgard CMS
+MODX
+Moodle
+Novius OS
+Nucleus CMS
+Ocportal
+papaya CMS
+Phire CMS
+PHP-Fusion
+PHP-Nuke
+phpWebLog
+phpWebSite
+phpWiki
+pimcore
+PivotX
+Pixie
+PmWiki
+Prestashop
+ProcessWire
+RavenNuke CMS
+Rubedo CMS
+SMW+
+Serendipity
+SilverStripe
+SPIP
+TangoCMS
+Textpattern
+Tiki Wiki CMS Groupware
+TYPO3
+Wolf CMS
+WordPress
+Xaraya
+XOOPS
+Zenario
+Zikula
+Django cms
+Django-cms
+MoinMoin
+Odoo
+Plone
+BrowserCMS
+Radiant
+Refinery CMS
+Typo
+ColdFusion Markup Language
+CFML
+Mura CMS
+FarCry CMS
+Ghost
+OpenACS
+TiddlyWiki
+Zotonic
+

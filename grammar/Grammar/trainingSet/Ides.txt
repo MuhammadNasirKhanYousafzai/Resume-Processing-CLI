@@ -1,0 +1,120 @@
+Jetbrains RubyMine
+Aptana Studio
+Redcar alpha
+Komodo IDE
+RubyMine 6
+NetBeans
+Komodo
+Arcadia
+Vim
+Emacs
+Sublime
+PyCharm
+visual studio
+Wing
+Bluefish
+CodeLite
+Grease
+Kantharos PHP IDE
+Alleycode HTML Editor
+Codelobster
+ConTEXT
+Crimson Editor
+HTML-Kit
+Microsoft WebMatrix
+Notepad2
+Notepad++
+PSPad
+RJ TextEd
+TextWrangler
+TextMate
+Smultron
+Coda
+gedit
+gPHPEdit
+Kwrite
+Kate
+KDevelop
+ActiveState Komodo IDE
+Adobe Dreamweaver
+BBEdit
+CodeCharge Studio
+EditPlus
+EmEditor
+HyperEdit
+Microsoft Expression Web
+NoteTab
+NuSphere PhpED
+PHPEdit
+phpDesigner
+JetBrains PhpStorm
+Koding
+Embarcadero RadPHP
+Rapid PHP Editor
+skEdit
+SlickEdit
+UltraEdit
+WebSmart PHP
+Zend Studio
+Smultron
+VS.PHP
+LiClipse
+KDevelop
+PyDev
+Wing IDE
+PyScripter
+Pyshield
+Spyder
+IdleX
+�.dev
+IEP
+PythonToolkit
+PyStudio
+Exedore
+eric
+SPE
+Pida
+SharpDevelop
+NINJA-IDES
+Pcode
+Visual Python
+Xcode
+BoaConstructor
+MonkeyStudio
+PythonCard
+ntelliJ IDEA
+Java Inventor
+NetBeans IDE
+NaviCoder IDE
+Jcoder Java IDE
+SkyIDE
+Enide Studio
+ObjectScript
+Java Development Kit
+BlueJ
+DrJava
+Eclipse
+Javelin
+jEdit
+jGRASP
+JSource
+JotAzul
+Asterix IDE
+RAD Studio
+Delphi
+Lazarus
+RapidSQL
+Oracle SQLDeveloper
+Oracle
+Nusphere PHPed
+FlashDevelop
+Flash Builder
+Padre
+Lispworks
+Emacs
+TextMate
+MonoDevelop
+KDevelop
+Qt Creator
+UltraEdit
+BBEdit
